@@ -1,0 +1,33 @@
+[
+  {
+    "title": "Frontend Developer Intern",
+    "company": "Google",
+    "skills": [
+      "html",
+      "css",
+      "javascript",
+      "react"
+    ]
+  },
+
+  {
+    "title": "Backend Developer Intern",
+    "company": "Amazon",
+    "skills": [
+      "node",
+      "express",
+      "mongodb"
+    ]
+  },
+
+  {
+    "title": "Machine Learning Intern",
+    "company": "Microsoft",
+    "skills": [
+      "python",
+      "tensorflow",
+      "numpy",
+      "pandas"
+    ]
+  }
+]

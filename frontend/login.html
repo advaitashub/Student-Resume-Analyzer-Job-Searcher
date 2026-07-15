@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modern Login Page</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+  </style>
+</head>
+
+<body
+  class="bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-500 min-h-screen flex items-center justify-center px-4">
+
+  <!-- Login Card -->
+  <div class="w-full max-w-md bg-white/10 backdrop-blur-lg border border-white/20 rounded-3xl shadow-2xl p-8">
+
+    <!-- Heading -->
+    <div class="text-center mb-8">
+      <h1 class="text-4xl font-bold text-white">Welcome Back</h1>
+      <p class="text-gray-200 mt-2">
+        Login to continue
+      </p>
+    </div>
+
+    <!-- Form -->
+    <form id="loginForm" class="space-y-6">
+
+      <!-- Email -->
+      <div>
+        <label class="block text-white mb-2 font-medium">
+          Email
+        </label>
+
+        <input type="email" id="email" placeholder="Enter your email"
+          class="w-full px-4 py-3 rounded-xl bg-white/20 text-white placeholder-gray-200 border border-white/30 outline-none focus:ring-2 focus:ring-white" />
+      </div>
+
+      <!-- Password -->
+      <div>
+        <label class="block text-white mb-2 font-medium">
+          Password
+        </label>
+
+        <div class="relative">
+          <input type="password" id="password" placeholder="Enter your password"
+            class="w-full px-4 py-3 rounded-xl bg-white/20 text-white placeholder-gray-200 border border-white/30 outline-none focus:ring-2 focus:ring-white" />
+
+          <!-- Show Password Button -->
+          <button type="button" id="togglePassword" class="absolute right-4 top-3 text-white">
+            Show
+          </button>
+        </div>
+      </div>
+
+      <!-- Remember + Forgot -->
+      <div class="flex items-center justify-between text-sm text-white">
+        <label class="flex items-center gap-2 cursor-pointer">
+          <input type="checkbox" class="accent-pink-500">
+          Remember me
+        </label>
+
+        <a href="#" class="hover:underline">
+          Forgot Password?
+        </a>
+      </div>
+
+      <!-- Login Button -->
+      <button type="submit"
+        class="w-full bg-white text-purple-700 font-bold py-3 rounded-xl hover:scale-105 transition duration-300 shadow-lg">
+        Login
+      </button>
+
+    </form>
+
+    <!-- Divider -->
+    <div class="flex items-center gap-4 my-6">
+      <div class="flex-1 h-[1px] bg-white/30"></div>
+      <span class="text-white text-sm">OR</span>
+      <div class="flex-1 h-[1px] bg-white/30"></div>
+    </div>
+
+    <!-- Social Buttons -->
+    <div class="space-y-3">
+
+      <button class="w-full bg-white text-black py-3 rounded-xl font-semibold hover:bg-gray-100 transition">
+        Continue with Google
+      </button>
+
+      <button class="w-full bg-blue-600 text-white py-3 rounded-xl font-semibold hover:bg-blue-700 transition">
+        Continue with Facebook
+      </button>
+
+    </div>
+
+    <!-- Signup -->
+    <p class="text-center text-white mt-8">
+      Don't have an account?
+      <a href="#" class="font-bold hover:underline">
+        Sign Up
+      </a>
+    </p>
+
+  </div>
+
+  <script src="./js/login.js"></script>
+
+</body>
+
+</html>

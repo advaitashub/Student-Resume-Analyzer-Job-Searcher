@@ -1,0 +1,23 @@
+# Node
+node_modules/
+**/node_modules/
+
+# Python
+venv/
+.venv/
+**/venv/
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+.env.*
+
+# Uploads
+backend/uploads/
+
+# Secrets
+mongodbKey.txt
+
+# Logs
+*.log
